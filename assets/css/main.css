@@ -5331,3 +5331,27 @@ span.kicker, .kicker, .eyebrow, .label, .tag {
   color: rgba(255,255,255,0.85) !important;
   text-shadow: 1px 1px 2px rgba(0,0,0,0.55);
 }
+/* --- BikeGear intro image tweaks (reduce blur by resizing & adding clarity) --- */
+#bikegear .image.main img,
+#bikegear .intro-image img {
+  max-width: 360px;              /* slightly smaller so the browser doesn’t stretch it */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.25);
+  image-rendering: -webkit-optimize-contrast; /* best available browser sharpening */
+  filter: saturate(1.04) contrast(1.03);
+}
+
+/* If your BikeGear intro currently stacks (image above text),
+   this helps keep spacing tight and clean on small screens too */
+#bikegear .project-intro {
+  gap: 24px;
+}
+/* Tools bar label readability */
+.tools-bar .label {
+  color: #e7f5ff;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.45);
+}
