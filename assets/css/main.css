@@ -5452,4 +5452,15 @@ span.kicker, .kicker, .eyebrow, .label, .tag {
 @media (max-width: 860px){
   .intro-media{ width:100%; max-width:630px; }
   .intro-text{ font-size:1.05rem; }
+}/* Standardize ALL 'See Screenshots' buttons */
+a.btn-cta,
+a.btn-default {
+  background: linear-gradient(180deg,#007bff 0%, #0056b3 100%) !important;
+  color: #fff !important;
+  border: none !important;
+}
+
+a.btn-cta:hover,
+a.btn-default:hover {
+  background: linear-gradient(180deg,#3399ff 0%, #0073e6 100%) !important;
 }
