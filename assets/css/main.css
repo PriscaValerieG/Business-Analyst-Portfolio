@@ -4974,4 +4974,136 @@ body{background:linear-gradient(120deg,var(--bg-start),var(--bg-end));color:var(
 }
 .hero-actions .button.secondary:hover {
   background: #5a8fd1 !important;
+}/* ===========================
+   NOVAMART THEME (global)
+   =========================== */
+
+/* Palette */
+:root{
+  --nm-orange:#E86A33; /* NovaMart CTA */
+  --nm-orange-2:#F0824D; /* hover */
+  --nm-teal:#0FA3B1; /* secondary CTA */
+  --nm-teal-2:#31B9C5; /* hover */
+  --nm-dark:#0F1A2C; /* base dark */
+  --nm-dark-soft:#16233A; /* cards/bars */
+  --nm-light:#F5F7FB; /* light text */
 }
+
+/* Global background subtle gradient */
+body{
+  background:
+    radial-gradient(1100px 600px at 50% -200px, rgba(255,255,255,.08), transparent 60%),
+    linear-gradient(180deg, #0f172a 0%, #0b1323 40%, #0b1323 100%);
+  color:#e8edf7;
+}
+
+/* ---- HERO / BANNER (your name + contact) ---- */
+/* Try both ids since different templates use #hero or #intro */
+#hero, #intro{
+  background: linear-gradient(180deg, rgba(8,15,28,.85), rgba(8,15,28,.75));
+  border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+#hero h1, #intro h1{
+  color:#fff !important;
+  text-shadow:0 2px 10px rgba(0,0,0,.55);
+  letter-spacing:.5px;
+}
+
+#hero .role, #intro .role,
+#hero .contact, #intro .contact,
+#hero .contact a, #intro .contact a{
+  color:#fff !important;
+  font-weight:500;
+  text-shadow:0 1px 3px rgba(0,0,0,.55);
+}
+
+#hero .social a, #intro .social a{
+  color:#fff !important;
+}
+#hero .social a:hover, #intro .social a:hover{
+  color:var(--nm-orange) !important;
+}
+
+/* ---- SECTION BAR: "PROJECT TITLES" ---- */
+.section-bar{
+  background:rgba(22,35,58,.55) !important; /* semi transparent dark */
+  backdrop-filter:blur(6px);
+  -webkit-backdrop-filter:blur(6px);
+  border-left:4px solid var(--nm-teal);
+  color:#f7f9ff !important;
+  text-transform:uppercase;
+  letter-spacing:1px;
+  font-weight:700;
+}
+.section-bar .icon-btn{ color:#fff !important; }
+.section-bar .icon-btn:hover{ color:#ffd369 !important; }
+
+/* ---- HEADERS FOR EACH PROJECT TITLE (big colored pills) ---- */
+.project-title{
+  background:var(--nm-orange) !important;
+  color:#fff !important;
+  border:none !important;
+  box-shadow:0 6px 20px rgba(232,106,51,.25);
+}
+.project-title.secondary{
+  background:var(--nm-teal) !important;
+  box-shadow:0 6px 20px rgba(15,163,177,.25);
+}
+.project-title:hover{ background:var(--nm-orange-2) !important; }
+.project-title.secondary:hover{ background:var(--nm-teal-2) !important; }
+
+/* ---- CTA BUTTON SYSTEM (unifies all buttons) ---- */
+.button, a.button{
+  border:none !important;
+  font-weight:600;
+  letter-spacing:.25px;
+}
+
+/* Primary (orange) */
+.button.primary, a.button.primary{
+  background:var(--nm-orange) !important;
+  color:#fff !important;
+  box-shadow:0 6px 18px rgba(232,106,51,.25);
+}
+.button.primary:hover{ background:var(--nm-orange-2) !important; }
+
+/* Secondary (teal) — use for BikeGear hero / extra CTAs */
+.button.secondary, a.button.secondary{
+  background:var(--nm-teal) !important;
+  color:#fff !important;
+  box-shadow:0 6px 18px rgba(15,163,177,.25);
+}
+.button.secondary:hover{ background:var(--nm-teal-2) !important; }
+
+/* Alt (glass-style on dark bg) — for “View screenshots”, etc. */
+.button.alt, a.button.alt{
+  background:rgba(255,255,255,.10) !important;
+  color:#fff !important;
+  border:1px solid rgba(255,255,255,.18) !important;
+  box-shadow:0 4px 14px rgba(0,0,0,.25);
+}
+.button.alt:hover{
+  background:rgba(255,255,255,.16) !important;
+  border-color:rgba(255,255,255,.25) !important;
+}
+
+/* Ensure grid screenshot buttons don’t go dark */
+.images-grid .button,
+.images-grid a.button{
+  filter:none !important;
+  opacity:1 !important;
+}
+
+/* Cards / panels (if any) */
+.card, .panel, .box{
+  background:rgba(22,35,58,.55);
+  border:1px solid rgba(255,255,255,.06);
+  box-shadow:0 8px 26px rgba(0,0,0,.25);
+}
+
+/* Improve readability of paragraphs on banner */
+#hero p, #intro p{ color:#f0f4ff; }
+
+/* Small helpers */
+.text-light{ color:#f0f4ff !important; }
