@@ -5107,3 +5107,75 @@ body{
 
 /* Small helpers */
 .text-light{ color:#f0f4ff !important; }
+/* ---- Fix dark buttons inside screenshot grids / tiles ---- */
+.images-grid .button,
+.images-grid a.button,
+.images-grid .actions .button{
+  background: var(--nm-teal) !important;
+  color: #fff !important;
+  border: none !important;
+  opacity: 1 !important;
+  filter: none !important;
+  box-shadow: 0 6px 18px rgba(15,163,177,.25);
+}
+.images-grid .button:hover,
+.images-grid a.button:hover,
+.images-grid .actions .button:hover{
+  background: var(--nm-teal-2) !important;
+}
+
+/* Reduce blur on big intro images by not stretching them beyond their true size */
+.image.main img{
+  width: 100%;
+  max-width: 900px; /* cap display width so a small image doesn't get blown up */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}/* === Hero Header Fixes === */
+#hero .hero-name h1 {
+  color: #ffffff;           /* White name text */
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+#hero .subtitle {
+  color: #e0e0e0;           /* Light gray for subtitle */
+  font-size: 1.2em;
+}
+
+#hero .button {
+  background: #ff6b35;      /* Bright orange buttons */
+  color: #fff !important;
+  font-weight: bold;
+  border: none;
+}
+
+#hero .button:hover {
+  background: #e85a2a;      /* Slightly darker on hover */
+}
+
+/* === Project Section Buttons Fix === */
+.project-cta a {
+  background: #0077b6;      /* Bright blue */
+  color: #fff !important;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 0.6em 1.2em;
+}
+
+.project-cta a:hover {
+  background: #005f8c;      /* Darker blue hover */
+}
+
+/* === Footer Fix === */
+#footer {
+  background: #222;          /* Dark footer */
+  color: #ccc;
+  text-align: center;
+  padding: 2em 0;
+}
+
+#footer .copyright {
+  font-size: 0.9em;
+  color: #aaa;
+}
