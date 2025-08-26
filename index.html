@@ -17,87 +17,168 @@
 		<!-- Wrapper -->
 			<div id="wrapper" class="fade-in">
 
-<!-- ====== HERO ====== -->
-<section id="hero" class="hero">
-  <h1>PRISCA VALERIE GOZIA</h1>
-  <p class="subtitle">Business Analyst · SQL · Excel · Power BI</p>
+<!-- ===== HERO (Name + Contact + Quick Nav) ===== -->
+<header id="hero" class="hero">
+  <div class="hero-inner">
+    <div class="hero-name">
+      <h1>PRISCA VALERIE GOZIA</h1>
+      <p class="subtitle">Business Analyst · SQL · Excel · Power BI</p>
+      <div class="hero-actions">
+        <a href="#novamart" class="button primary">Top Project: NovaMart</a>
+        <a href="#bikegear" class="button">BikeGear</a>
+      </div>
+    </div>
 
-  <p class="hero-cta">
-    <a href="#novamart" class="button primary">See my top project</a>
-    <a href="#projects" class="button">Browse projects</a>
-  </p>
-</section>
+    <ul class="hero-contact">
+      <li>📍 Zacharzyce, Wrocław, Poland</li>
+      <li>📞 <a href="tel:+48739458445">+48 739 458 445</a></li>
+      <li>✉️ <a href="mailto:priscavalerieg@gmail.com">priscavalerieg@gmail.com</a></li>
+      <li>
+        <a href="https://www.linkedin.com/in/prisca-valerie-gozia/" target="_blank" class="icon brands fa-linkedin" aria-label="LinkedIn"></a>
+        <a href="https://github.com/PriscaValerieG" target="_blank" class="icon brands fa-github" aria-label="GitHub"></a>
+      </li>
+    </ul>
+  </div>
+</header>
 
-<!-- ====== PROJECTS ====== -->
+<!-- ===== PROJECTS ===== -->
 <section id="projects" class="projects">
 
-  <!-- NovaMart Project -->
+  <!-- ===== NovaMart (Power BI) ===== -->
   <section id="novamart" class="project">
     <header class="major">
       <h2 class="section-title badge-orange">NovaMart — Subscription Analytics with SQL &amp; Power BI</h2>
     </header>
 
-    <p class="project-intro">
-      NovaMart, a digital-first subscription company, needed visibility into revenue, churn,
-      customer behavior, and support issues. I modeled the data in SQL and built a two-page Power BI report
-      that tracks performance and reveals growth opportunities and service gaps.
-    </p>
+    <!-- title bar like instructor -->
+    <div class="section-bar">
+      <div class="badge-left">Project Titles</div>
+      <div class="actions-right">
+        <a class="icon-btn" href="https://www.linkedin.com/in/prisca-valerie-gozia/" target="_blank" aria-label="LinkedIn"><span class="icon brands fa-linkedin"></span></a>
+        <a class="icon-btn" href="https://github.com/PriscaValerieG" target="_blank" aria-label="GitHub"><span class="icon brands fa-github"></span></a>
+      </div>
+    </div>
 
-    <span class="image hero-img">
-      <img src="images/image-novamart.png" alt="NovaMart subscription products" />
-    </span>
+    <!-- 2-column intro: image + summary + CTAs -->
+    <div class="intro-flex">
+      <div class="intro-media">
+        <img src="images/image-novamart.png" alt="NovaMart products">
+      </div>
+      <div class="intro-text">
+        <p>
+          NovaMart, a digital-first subscription company, needed visibility into revenue, churn, customer behavior, and support issues.
+          I modeled the data in SQL and built a two-page Power BI report tracking key KPIs, trends, and service gaps. The work provided a clear picture of performance and actionable opportunities to improve retention and growth.
+        </p>
 
-    <p class="cta-row">
-      <a class="button primary" href="images/novamart-dashboard-1.jpg" target="_blank">Check it out</a>
-      <a class="button" href="images/novamart-dashboard-2.jpg" target="_blank">More dashboards</a>
-    </p>
+        <div class="project-cta">
+          <!-- Interactive dashboard (replace the URL) -->
+          <a class="btn-cta btn-powerbi" href="YOUR_POWERBI_NOVAMART_URL" target="_blank" rel="noopener">
+            <i>📊</i> View Interactive (Power BI)
+          </a>
+          <!-- Fallback screenshots -->
+          <a class="btn-cta btn-github" href="#novamart-shots">
+            <i>🖼️</i> See Screenshots
+          </a>
+        </div>
+      </div>
+    </div>
 
-    <h3 class="group-title">Dashboards</h3>
+    <!-- Screenshots (fallback) -->
+    <h3 id="novamart-shots" class="group-title">Dashboards</h3>
     <div class="images-grid">
-      <div><img src="images/novamart-dashboard-1.jpg" alt="NovaMart dashboard page 1"></div>
-      <div><img src="images/novamart-dashboard-2.jpg" alt="NovaMart dashboard page 2"></div>
+      <div class="card">
+        <img src="images/novamart-dashboard-1.jpg" alt="NovaMart dashboard page 1">
+        <a class="button primary small block" href="images/novamart-dashboard-1.jpg" target="_blank">Check it out</a>
+      </div>
+      <div class="card">
+        <img src="images/novamart-dashboard-2.jpg" alt="NovaMart dashboard page 2">
+        <a class="button small block" href="images/novamart-dashboard-2.jpg" target="_blank">Check it out</a>
+      </div>
     </div>
 
     <h3 class="group-title">Summary &amp; Insights</h3>
     <div class="images-grid">
-      <div><img src="images/novamart-summary.jpg" alt="NovaMart summary"></div>
-      <div><img src="images/novamart-insights-1.jpg" alt="NovaMart insights 1"></div>
-      <div><img src="images/novamart-insights-2.jpg" alt="NovaMart insights 2"></div>
-      <div><img src="images/novamart-insights-3.jpg" alt="NovaMart insights 3"></div>
+      <div class="card">
+        <img src="images/novamart-summary.jpg" alt="NovaMart summary">
+        <a class="button small block" href="images/novamart-summary.jpg" target="_blank">Check it out</a>
+      </div>
+      <div class="card">
+        <img src="images/novamart-insights-1.jpg" alt="NovaMart insights 1">
+        <a class="button small block" href="images/novamart-insights-1.jpg" target="_blank">Check it out</a>
+      </div>
+      <div class="card">
+        <img src="images/novamart-insights-2.jpg" alt="NovaMart insights 2">
+        <a class="button small block" href="images/novamart-insights-2.jpg" target="_blank">Check it out</a>
+      </div>
+      <div class="card">
+        <img src="images/novamart-insights-3.jpg" alt="NovaMart insights 3">
+        <a class="button small block" href="images/novamart-insights-3.jpg" target="_blank">Check it out</a>
+      </div>
     </div>
+
   </section>
 
   <hr/>
 
-  <!-- BikeGear Project -->
+  <!-- ===== BikeGear (Excel) ===== -->
   <section id="bikegear" class="project">
     <header class="major">
       <h2 class="section-title badge-teal">BikeGear Solutions — Driving Sales Optimization Through Data</h2>
     </header>
 
-    <p class="project-intro">
-      BikeGear Solutions, a cycling accessories retailer, needed to uncover sales drivers across regions,
-      age groups, and product categories. I built an Excel-based dashboard and pivot table analysis to
-      identify seasonal revenue trends, top-performing markets, and product profitability.
-    </p>
-
-    <span class="image hero-img">
-      <img src="images/image-accesories2.png" alt="BikeGear products" />
-    </span>
-
-    <p class="cta-row">
-      <a class="button primary" href="images/bikegear-dashboard.jpg" target="_blank">Check it out</a>
-    </p>
-
-    <h3 class="group-title">Project Screenshots</h3>
-    <div class="images-grid">
-      <div><img src="images/bikegear-pivots-1.jpg" alt="BikeGear Pivot Tables Part 1"></div>
-      <div><img src="images/bikegear-pivots-2.jpg" alt="BikeGear Pivot Tables Part 2"></div>
-      <div><img src="images/bikegear-dashboard.jpg" alt="BikeGear Dashboard"></div>
-      <div><img src="images/bikegear-insights.jpg" alt="BikeGear Insights & Recommendations"></div>
+    <div class="section-bar">
+      <div class="badge-left">Project Titles</div>
+      <div class="actions-right">
+        <a class="icon-btn" href="https://www.linkedin.com/in/prisca-valerie-gozia/" target="_blank" aria-label="LinkedIn"><span class="icon brands fa-linkedin"></span></a>
+        <a class="icon-btn" href="https://github.com/PriscaValerieG" target="_blank" aria-label="GitHub"><span class="icon brands fa-github"></span></a>
+      </div>
     </div>
+
+    <div class="intro-flex">
+      <div class="intro-media">
+        <img src="images/image-accesories2.png" alt="BikeGear products">
+      </div>
+      <div class="intro-text">
+        <p>
+          BikeGear Solutions, a cycling accessories retailer, needed to uncover sales drivers across regions, age groups, and product categories.
+          I built an Excel-based analysis with pivot tables and a dashboard to identify seasonal trends, top-performing markets, and high-margin product families—informing inventory planning and targeted campaigns.
+        </p>
+
+        <div class="project-cta">
+          <!-- Optional: add your hosted workbook link -->
+          <a class="btn-cta btn-excel" href="YOUR_EXCEL_FILE_LINK" target="_blank" rel="noopener">
+            <i>📈</i> Download Excel (Pivot)
+          </a>
+          <a class="btn-cta btn-github" href="#bikegear-shots">
+            <i>🖼️</i> See Screenshots
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <h3 id="bikegear-shots" class="group-title">Project Screenshots</h3>
+    <div class="images-grid">
+      <div class="card">
+        <img src="images/bikegear-pivots-1.jpg" alt="BikeGear Pivot Tables Part 1">
+        <a class="button small block" href="images/bikegear-pivots-1.jpg" target="_blank">Check it out</a>
+      </div>
+      <div class="card">
+        <img src="images/bikegear-pivots-2.jpg" alt="BikeGear Pivot Tables Part 2">
+        <a class="button small block" href="images/bikegear-pivots-2.jpg" target="_blank">Check it out</a>
+      </div>
+      <div class="card">
+        <img src="images/bikegear-dashboard.jpg" alt="BikeGear Dashboard">
+        <a class="button primary small block" href="images/bikegear-dashboard.jpg" target="_blank">Check it out</a>
+      </div>
+      <div class="card">
+        <img src="images/bikegear-insights.jpg" alt="BikeGear Insights &amp; Recommendations">
+        <a class="button small block" href="images/bikegear-insights.jpg" target="_blank">Check it out</a>
+      </div>
+    </div>
+
   </section>
 
+</section>
 <!-- ====== FOOTER ====== -->
 <footer id="footer" class="contact-footer">
   <section>

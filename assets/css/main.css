@@ -4863,4 +4863,80 @@ body{background:linear-gradient(120deg,var(--bg-start),var(--bg-end));color:var(
 
 .contact-footer{display:grid;grid-template-columns:repeat(4,1fr);gap:1rem;padding:2rem 1rem;border-top:1px solid #fff2;}
 .contact-footer a{color:#bfe3ff;text-decoration:none;}
+/* ===== Hero header ===== */
+.hero{
+  padding: 3.5rem 1rem 1.5rem;
+  background: linear-gradient(120deg,#1f1f27,#2c3e50);
+  border-bottom: 1px solid #ffffff18;
+}
+.hero-inner{
+  max-width: 1160px; margin: 0 auto; display:flex; gap: 1.5rem;
+  align-items: center; justify-content: space-between; flex-wrap: wrap;
+}
+.hero-name h1{ margin:0 0 .25rem; font-size: clamp(1.8rem,3.4vw,2.6rem); }
+.hero .subtitle{ color:#b8c2cc; margin:0 0 .75rem; }
+.hero-actions .button{ margin-right:.4rem; margin-bottom:.4rem; }
+.hero-contact{ list-style:none; padding:0; margin:0; display:flex; gap: 1rem; align-items:center; flex-wrap:wrap; }
+.hero-contact a{ color:#bfe3ff; text-decoration:none; }
 
+/* ===== Section title bar (instructor style) ===== */
+.section-bar{
+  display:flex; align-items:center; justify-content:space-between;
+  padding:.7rem 1rem; margin:1rem 0 1rem;
+  border:1px solid #ffffff1a; border-radius:12px;
+  background: #0b1020cc; box-shadow: 0 8px 24px rgba(0,0,0,.25);
+  backdrop-filter: blur(6px);
+}
+.badge-left{ font-weight:700; letter-spacing:.08em; text-transform:uppercase; font-size:.82rem; color:#a7ffd6; }
+.actions-right{ display:flex; gap:.5rem; }
+.icon-btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  width:38px; height:38px; border-radius:10px; border:1px solid #ffffff22;
+  background:#ffffff0e; transition:transform .2s, box-shadow .2s, background .2s;
+}
+.icon-btn:hover{ transform: translateY(-2px); box-shadow: 0 6px 18px rgba(0,0,0,.35); background:#ffffff1a; }
+
+/* ===== Two-column intro (image + text) ===== */
+.intro-flex{ display:grid; grid-template-columns: 420px 1fr; gap: 1.25rem; align-items:center; }
+.intro-media img{
+  width:100%; height:300px; object-fit:cover; border-radius:14px;
+  box-shadow: 0 10px 28px rgba(0,0,0,.25); border:1px solid #ffffff1a;
+  filter: contrast(1.04) saturate(1.06);
+}
+@media (max-width: 980px){
+  .intro-flex{ grid-template-columns: 1fr; }
+  .intro-media img{ height:240px; }
+}
+
+/* ===== CTA pill buttons ===== */
+.project-cta{ display:flex; gap:12px; flex-wrap:wrap; margin:14px 0 6px; }
+.btn-cta{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:12px 18px; border-radius:9999px; font-weight:800; letter-spacing:.04em;
+  text-transform:uppercase; text-decoration:none; border:2px solid transparent;
+  box-shadow:0 8px 24px rgba(0,0,0,.08);
+  transition:transform .12s, box-shadow .12s, background .12s, color .12s, border-color .12s;
+  white-space:nowrap;
+}
+.btn-cta:hover{ transform:translateY(-1px); box-shadow:0 10px 28px rgba(0,0,0,.12); }
+.btn-cta i{ display:inline-flex; align-items:center; justify-content:center; width:22px; height:22px; border-radius:9999px; background:#fff; color:inherit; font-style:normal; margin-right:10px; font-size:13px; }
+.btn-powerbi{ background:#f2c811; color:#111; border-color:#e6b800; }
+.btn-powerbi:hover{ background:#ffd426; }
+.btn-github{ background:#111; color:#fff; border-color:#111; }
+.btn-github:hover{ background:#222; }
+.btn-excel{ background:#1d6f42; color:#fff; border-color:#1d6f42; }
+.btn-excel:hover{ background:#228e54; }
+
+/* ===== Cards + grids (you already have similar; these refine) ===== */
+.card{ background:#ffffff10; border:1px solid #ffffff1a; border-radius:12px; padding:.65rem;
+       box-shadow: 0 10px 28px rgba(0,0,0,.28); transition: transform .2s, box-shadow .2s; }
+.card:hover{ transform:translateY(-4px); box-shadow: 0 14px 36px rgba(0,0,0,.38); }
+.card img{ width:100%; height:200px; object-fit:cover; border-radius:8px; }
+.button.block{ display:block; text-align:center; margin-top:.55rem; }
+.button.small{ font-size:.9rem; padding:.5rem .85rem; }
+
+/* ===== Section titles ===== */
+.section-title{ display:inline-block; font-size: clamp(1.3rem,2.3vw,1.8rem); padding:.35rem .7rem; border-radius:.6rem; color:#fff; }
+.badge-orange{ background:linear-gradient(135deg,#ff7a3d,#ff4d4d); }
+.badge-teal{ background:linear-gradient(135deg,#3cc7b0,#1ba98e); }
+.group-title{ margin: 1.4rem 0 .7rem; color:#e7eef4; }
