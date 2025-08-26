@@ -4940,3 +4940,38 @@ body{background:linear-gradient(120deg,var(--bg-start),var(--bg-end));color:var(
 .badge-orange{ background:linear-gradient(135deg,#ff7a3d,#ff4d4d); }
 .badge-teal{ background:linear-gradient(135deg,#3cc7b0,#1ba98e); }
 .group-title{ margin: 1.4rem 0 .7rem; color:#e7eef4; }
+/* === Brighten header contact + project titles === */
+
+/* Contact info in hero */
+#hero .contact, 
+#hero .contact a {
+  color: #ffffff !important;
+  font-weight: 500;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+}
+
+/* Project Titles section */
+.section-bar,
+.section-bar .badge-left {
+  background: rgba(255,255,255,0.05) !important;
+  color: #f5f5f5 !important;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Make icons brighter */
+.section-bar .icon-btn {
+  color: #ffffff !important;
+}
+.section-bar .icon-btn:hover {
+  color: #ffd369 !important;
+}/* BikeGear hero button (secondary project) */
+.hero-actions .button.secondary {
+  background: #3f72af !important; /* light blue */
+  color: #fff !important;
+  border: none !important;
+}
+.hero-actions .button.secondary:hover {
+  background: #5a8fd1 !important;
+}
