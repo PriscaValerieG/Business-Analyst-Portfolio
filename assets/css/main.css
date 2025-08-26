@@ -5207,3 +5207,39 @@ body{
   color: #ccc;
   margin-top: 2em;
 }
+/* Brighten top banner text & icons */
+#hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+}
+#hero h1, #hero p, #hero a, #hero i {
+  color: #ffffff !important;
+}
+
+/* Fix button styles */
+.button.primary {
+  background: #ff6600;   /* NovaMart = orange */
+  color: #fff !important;
+  border: none;
+}
+.button.secondary {
+  background: #0073e6;   /* BikeGear = blue */
+  color: #fff !important;
+  border: none;
+}
+.button:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  transition: 0.2s;
+}
+
+/* Align NovaMart intro image higher */
+#novamart .image.main img {
+  max-width: 420px;
+  margin-top: -40px;   /* move image upwards */
+  float: left;         /* place image next to text */
+  margin-right: 20px;  /* spacing from paragraph */
+}
+#novamart p {
+  overflow: hidden;
+}
