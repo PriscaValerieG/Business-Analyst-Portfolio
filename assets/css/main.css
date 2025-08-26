@@ -5179,3 +5179,25 @@ body{
   font-size: 0.9em;
   color: #aaa;
 }
+/* Brighten hero header text and social icons */
+#hero h1, 
+#hero .subtitle, 
+#hero a.button,
+#hero .icon {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7); /* makes text pop */
+}
+
+#hero a.button.primary {
+  background: #ff5722; /* brighter orange for primary CTA */
+  color: #fff;
+}
+
+#hero a.button {
+  background: #333;
+  color: #fff;
+}
+
+#hero a.button:hover {
+  background: #555;
+}
