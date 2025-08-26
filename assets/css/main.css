@@ -5260,3 +5260,74 @@ header.major h2, header.major h3, header.major {
   display: block;
   margin: 0 auto;
 }
+/* ===== Typography & Title Glow ===== */
+
+/* All headings & title-like elements get a soft glow */
+h1, h2, h3, .major h2, .major h3, .section-title, .subtitle {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  letter-spacing: 0.6px;
+}
+
+/* The “PROJECT TITLES” banner (header.major) */
+header.major h2, header.major h3 {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.85);
+}
+
+/* ===== HERO (Your name + subtitle + quick links) ===== */
+#hero .hero-name h1 {
+  color: #fff !important;
+  font-weight: 800;
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.75);
+  letter-spacing: 0.8px;
+}
+
+#hero .subtitle {
+  color: rgba(255,255,255,0.92) !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.55);
+}
+
+/* Make the “Top Project” and “BikeGear” pills always readable */
+#hero .button.primary,
+#hero .button {
+  color: #fff !important;
+  text-shadow: 0 1px 2px rgba(0,0,0,0.35);
+}
+
+/* Dark-theme fix so secondary/neutral buttons don’t look ‘off’ */
+.button {
+  border: 0 !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.22);
+}
+.button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.28);
+}
+
+/* ===== Images polish ===== */
+
+/* Make BikeGear intro photo a bit smaller so it looks sharper */
+#bikegear .image.main img {
+  max-width: 360px;          /* was large; smaller looks crisper */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Lift the NovaMart intro image up a little to align with text */
+#novamart .image.main img {
+  margin-top: -8px;
+}
+
+/* ===== Section chips / underlabels legibility (e.g., small section labels) ===== */
+span.kicker, .kicker, .eyebrow, .label, .tag {
+  color: #ffffff !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.7);
+}
+
+/* ===== Footer copyright line legibility ===== */
+#footer .copyright {
+  color: rgba(255,255,255,0.85) !important;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.55);
+}
