@@ -5243,3 +5243,20 @@ body{
 #novamart p {
   overflow: hidden;
 }
+/* Brighten section titles */
+h3, h2, h1, .major, .subtitle, .section-title {
+  color: #ffffff !important;   /* white text */
+}
+
+/* Fix the "PROJECT TITLES" banner text */
+header.major h2, header.major h3, header.major {
+  color: #ffffff !important;
+}
+
+/* Shrink accessory image to look sharper */
+#bikegear .image.main img {
+  max-width: 350px;  /* smaller so it's clearer */
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
