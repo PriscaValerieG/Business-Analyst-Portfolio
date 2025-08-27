@@ -5824,3 +5824,14 @@ a.btn-default:hover {
   border-radius: 12px;
   font-weight: 700;
 }
+/* --- Fallback note under CTAs --- */
+.project-cta .note{
+  font-size: 0.92rem;
+  font-style: italic;
+  color: #fffae6;                                /* warm light text */
+  background: rgba(255, 165, 0, 0.14);           /* soft orange wash */
+  border-left: 3px solid #ff9900;                /* slim accent bar */
+  padding: 6px 10px;
+  margin: 8px 0 0;
+  border-radius: 6px;
+}
