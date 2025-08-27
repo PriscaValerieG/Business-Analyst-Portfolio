@@ -5674,3 +5674,35 @@ a.btn-default:hover {
   border-radius: 8px;    /* rounded corners */
   margin-right: 20px;    /* spacing from text */
 }
+/* ===== NovaMart image: enlarge & match BikeGear proportions ===== */
+#novamart .intro-flex {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+#novamart .intro-image {
+  flex: 0 0 340px;       /* try 340–360px, matches BikeGear nicely */
+  max-width: 100%;
+}
+
+#novamart .intro-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  object-fit: cover;     /* keeps proportions clean */
+}
+/* ===== Slimmer CTA buttons ===== */
+.project-cta .btn-cta {
+  font-size: 0.9rem; /* a bit smaller text */
+  padding: 8px 14px; /* reduce padding */
+  border-radius: 8px;
+  transition: box-shadow .2s ease, transform .15s ease;
+}
+
+.project-cta .btn-cta:hover {
+  box-shadow: 0 6px 14px rgba(0, 0, 0, .25);
+  transform: translateY(-1px);
+}
