@@ -5705,4 +5705,122 @@ a.btn-default:hover {
 .project-cta .btn-cta:hover {
   box-shadow: 0 6px 14px rgba(0, 0, 0, .25);
   transform: translateY(-1px);
+}/* =========================
+   FINAL PORTFOLIO POLISH
+   ========================= */
+
+/* --- Make the small “PROJECT OVERVIEW” bar readable --- */
+.section-bar {
+  background: rgba(20, 35, 50, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e8f0f6;
+  border-radius: 10px;
+}
+.section-bar .badge-left {
+  color: #e8f0f6;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+}
+
+/* --- Slight glow on your name for readability --- */
+#hero .hero-name h1 {
+  text-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+#hero .subtitle {
+  color: #e8f0f6;
+  opacity: 0.95;
+}
+
+/* --- Round corners on images everywhere --- */
+.images-grid img,
+.intro-media img {
+  border-radius: 14px;
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.25);
+}
+
+/* =========================
+   Side-by-side intro blocks
+   ========================= */
+.project .intro-flex {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+}
+
+.project .intro-text {
+  flex: 1 1 520px;
+}
+
+/* Default image sizing (applies to both projects) */
+.project .intro-media img {
+  display: block;
+  width: 340px;          /* good desktop baseline */
+  max-width: 38vw;       /* keeps it responsive */
+  height: auto;
+}
+
+/* NovaMart image: make larger to match BikeGear */
+#novamart .intro-media img {
+  width: 380px;          /* adjust if you want a bit larger/smaller */
+  max-width: 42vw;
+}
+
+/* Phone / narrow screens: stack columns and widen the image a bit */
+@media (max-width: 900px) {
+  .project .intro-flex { flex-direction: column; align-items: flex-start; }
+  .project .intro-media img { width: 92%; max-width: 480px; }
+}
+
+/* =========================
+   CTA buttons (consistent)
+   ========================= */
+
+/* Base CTA look */
+.btn-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 16px;          /* slightly smaller than before */
+  border-radius: 12px;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  border: none;
+  color: #fff;
+  box-shadow: 0 10px 18px rgba(0,0,0,.25);
+  transition: transform .08s ease, box-shadow .18s ease, filter .18s ease;
+}
+.btn-cta:hover { transform: translateY(-1px); filter: brightness(1.06); }
+.btn-cta:active { transform: translateY(0); filter: brightness(.98); }
+
+/* NovaMart buttons – match banner (warm orange/red) */
+#novamart .btn-cta {
+  background: linear-gradient(90deg, #d43b2c 0%, #ff8a00 100%);
+}
+
+/* BikeGear buttons – match green banner */
+#bikegear .btn-cta {
+  background: linear-gradient(90deg, #169b63 0%, #22b778 100%);
+}
+
+/* Excel download can skew slightly deeper green (still in theme) */
+#bikegear .btn-excel {
+  background: linear-gradient(90deg, #138a36 0%, #18b34c 100%);
+}
+
+/* Optional: smaller icon dots inside CTAs look crisper */
+.btn-cta i, .btn-cta .icon { font-size: 0.95rem; }
+
+/* =========================
+   “Check it out” buttons
+   ========================= */
+/* Ensure all screenshot cards have consistent radius */
+.images-grid > div {
+  border-radius: 14px;
+}
+
+/* If your template uses .button elements there, keep them vivid */
+.images-grid a.button,
+.images-grid .actions a.button {
+  border-radius: 12px;
+  font-weight: 700;
 }
