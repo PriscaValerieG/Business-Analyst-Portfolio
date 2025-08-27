@@ -5545,3 +5545,127 @@ a.btn-default:hover {
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.25);
 }
+/* ---- Button Theme Harmonization ---- */
+
+/* NovaMart buttons → match orange-red banner */
+.btn-cta.btn-powerbi,
+.btn-cta.btn-screenshots {
+  background: linear-gradient(to right, #d62828, #f77f00);
+  border: none;
+  color: #fff;
+}
+
+.btn-cta.btn-powerbi:hover,
+.btn-cta.btn-screenshots:hover {
+  background: linear-gradient(to right, #f77f00, #d62828);
+  transform: scale(1.05);
+}
+
+/* BikeGear buttons → match teal-green banner */
+.btn-cta.btn-excel,
+.btn-cta.btn-bikegear {
+  background: linear-gradient(to right, #0f9d58, #34a853);
+  border: none;
+  color: #fff;
+}
+
+.btn-cta.btn-excel:hover,
+.btn-cta.btn-bikegear:hover {
+  background: linear-gradient(to right, #34a853, #0f9d58);
+  transform: scale(1.05);
+}
+/* --- Rounded corners for CTAs --- */
+.btn-cta {
+  border-radius: 8px;
+  padding: 0.75em 1.5em;
+}
+
+/* NovaMart CTA colors to match banner (orange) */
+#novamart .btn-cta {
+  background: #0d4080;           /* deep blue base so white text pops */
+  border: 2px solid #0d4080;
+}
+#novamart .btn-cta:hover {
+  background: linear-gradient(90deg, #d93025, #fb8c00); /* red→orange gradient */
+  border-color: transparent;
+  transform: translateY(-1px);
+}
+
+/* BikeGear CTA colors to match green accent */
+#bikegear .btn-cta {
+  background: #0e8a68;           /* green */
+  border: 2px solid #0e8a68;
+}
+#bikegear .btn-cta:hover {
+  background: #12a379;
+  transform: translateY(-1px);
+}
+
+/* Make “SEE SCREENSHOTS” blue on BikeGear as you asked earlier */
+#bikegear .btn-cta.btn-secondary {
+  background: #1e63b5;           /* blue */
+  border-color: #1e63b5;
+}
+#bikegear .btn-cta.btn-secondary:hover {
+  background: #2b76cf;
+}
+/* ========== Shared intro layout & image styling ========== */
+.intro-flex {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  flex-wrap: wrap; /* stacks on small screens */
+  margin-top: 10px;
+}
+
+.intro-flex .intro-text { /* text column */
+  flex: 1 1 420px;
+  min-width: 320px;
+}
+
+.intro-flex .intro-image { /* image column */
+  flex: 0 0 380px; /* target width for crispness */
+  max-width: 420px;
+}
+
+.intro-flex .intro-image img {
+  width: 100%;
+  height: auto; /* avoid stretch/blur */
+  display: block;
+  border-radius: 14px; /* subtle rounded corners */
+  box-shadow: 0 10px 24px rgba(0,0,0,.18);
+}
+
+/* Put image on the LEFT for wrappers that have .intro-left */
+.intro-left .intro-image { order: -1; }
+.intro-left .intro-text { order: 0; }
+
+/* ========== Button themes per project ========== */
+/* Base button safety (white text + soft shadow) */
+#novamart a.btn-cta,
+#bikegear a.btn-cta {
+  color: #fff !important;
+  box-shadow: 0 8px 14px rgba(0,0,0,.15);
+}
+
+/* NovaMart: match the orange banner vibe */
+#novamart a.btn-cta {
+  background: #f37321; /* orange */
+  border-color: #f37321;
+}
+#novamart a.btn-cta:hover {
+  background: #d85f12; /* darker orange on hover */
+  border-color: #d85f12;
+  transform: translateY(-1px);
+}
+
+/* BikeGear: unify both buttons (Excel + Screenshots) to teal */
+#bikegear a.btn-cta {
+  background: #1db6b6; /* teal */
+  border-color: #1db6b6;
+}
+#bikegear a.btn-cta:hover {
+  background: #159c9c; /* darker teal */
+  border-color: #159c9c;
+  transform: translateY(-1px);
+}
