@@ -5914,3 +5914,22 @@ a.btn-default:hover {
   width: 100%;
   height: auto;
 }
+/* Project Screenshot Captions */
+.project-screenshot {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.project-screenshot img {
+  max-width: 100%;
+  border-radius: 6px; /* soft corners */
+  display: block;
+  margin: 0 auto;
+}
+
+.project-screenshot figcaption {
+  font-size: 0.85em;
+  font-style: italic;
+  color: #ccc; /* light gray so it's subtle */
+  margin-top: 0.4em;
+}
