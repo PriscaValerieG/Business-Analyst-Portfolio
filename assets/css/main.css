@@ -5835,3 +5835,55 @@ a.btn-default:hover {
   margin: 8px 0 0;
   border-radius: 6px;
 }
+/* ==== POLISH: NovaMart section tweaks ==== */
+
+/* Make the NovaMart intro image bigger (but stay responsive) */
+#novamart .intro-media img {
+  width: clamp(340px, 35vw, 480px);
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(0,0,0,.25);
+}
+
+/* Keep text + image 2-column layout solid */
+#novamart .intro-flex {
+  display: grid;
+  grid-template-columns: auto 1fr; /* image then text */
+  gap: 1.5rem;
+  align-items: center;
+}
+
+/* NovaMart CTA buttons — match the red→orange title banner */
+#novamart .btn-cta {
+  background: linear-gradient(90deg, #d83a2e 0%, #ff8a1e 100%);
+  border: 1px solid #ff8a1e;
+  color: #fff !important;
+  padding: 10px 16px; /* a touch more compact */
+  border-radius: 12px;
+  box-shadow: 0 6px 14px rgba(0,0,0,.18);
+  transition: transform .15s ease, box-shadow .15s ease, filter .15s ease;
+}
+#novamart .btn-cta:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.05);
+  box-shadow: 0 10px 20px rgba(0,0,0,.22);
+}
+
+/* Make the small round icon on the left of the CTA pop a bit */
+#novamart .btn-cta .icon {
+  background: rgba(255,255,255,.18);
+  box-shadow: inset 0 0 0 2px rgba(255,255,255,.25);
+}
+
+/* Mobile: stack neatly and keep the image strong */
+@media (max-width: 768px) {
+  #novamart .intro-flex {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  #novamart .intro-media img {
+    width: min(92vw, 520px);
+    margin-inline: auto;
+  }
+}
